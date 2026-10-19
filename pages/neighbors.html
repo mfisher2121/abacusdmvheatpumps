@@ -1,0 +1,127 @@
+<!--
+path: /neighbors/
+title: Help Your Street Catch the Heat Pump Rebates | DMV Heat Pumps
+description: Your own share link, ready-to-send messages for Nextdoor and group chats, a printable flyer with a QR code, and a kit for hosting a 30-minute porch talk.
+og: og-neighbors
+scripts: <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script><script src="/assets/neighbors.js" defer></script>
+-->
+<section class="hero">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Neighbors helping neighbors</p>
+      <h1>Most people hear about these rebates after the deadline.</h1>
+      <p class="lede">You can change that for your street in five minutes. Share the free check, put a flyer on the mailbox board, or host a short porch talk.</p>
+      {{FRIEND:willie:Everyone on the street knows someone.}}
+    </div>
+    <div class="card">
+      <p class="eyebrow">Your personal link</p>
+      <p><span class="reflink" data-reflink="/check/"></span></p>
+      <div data-share data-where="neighbors" data-path="/check/" data-title="Heat pump rebates: 2-minute check" data-text="Neighbors: if you heat with gas, oil or propane, check this before Nov 30. Free 2-minute check of DMV heat pump rebates, with the official sources."></div>
+      <p class="small muted" style="margin-top:.8rem">Your link only carries a short random code. It tells us a neighbor came from you, never who they are.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap split">
+    <div>
+      <h2>Become a Neighbor Champion</h2>
+      <p>When three neighbors use your link to get their summary, the checklist or alerts, we'll email you to mail a thank-you Mbraceables sticker pack. We count it on our community scoreboard as neighbors helped, the number we care about most.</p>
+      <p class="small muted">The sticker pack is a thank-you for sharing, never for a review. We don't trade anything for reviews.</p>
+    </div>
+    <div class="card">
+      <form data-lead="champion" data-ok="Your link is saved. Share away. We'll email you at three.">
+        <div class="field"><label for="ch-name">First name</label><input id="ch-name" name="first_name" type="text" required autocomplete="given-name"></div>
+        <div class="field"><label for="ch-email">Email</label><input id="ch-email" name="email" type="email" required autocomplete="email"></div>
+        <label class="consent"><input type="checkbox" name="consent_champion" required> Email me when three neighbors have used my link, to send my sticker pack. That's the only email this sends.</label>
+        <label class="consent"><input type="checkbox" name="adult" required> I am 18 or older.</label>
+        <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn btn-heart" type="submit">Save my link</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Messages you can send as-is</h2>
+    <p class="muted">Tap copy, paste, done. Your link is already in each one.</p>
+    <div class="grid-2 mt" id="scripts">
+      <div class="card"><h3>Nextdoor or a neighborhood Facebook group</h3>
+        <div class="share-box" data-script>Heads up, neighbors: if your home heats with gas, oil or propane, some Maryland heat pump rebates have an end date this fall (Nov 30 for Pepco and Delmarva switching amounts, Dec 31 for others). I found a free 2-minute check that shows which programs may fit, with links to the official pages. No sales calls. {link}</div>
+        <button class="btn btn-sm btn-ghost mt" data-copy>Copy</button></div>
+      <div class="card"><h3>Group text</h3>
+        <div class="share-box" data-script>Thought of you. This free check shows which heat pump rebates your home may use, with the official links. Took me 2 minutes. {link}</div>
+        <button class="btn btn-sm btn-ghost mt" data-copy>Copy</button></div>
+      <div class="card"><h3>HOA or civic association email</h3>
+        <div class="share-box" data-script>Subject: Heat pump rebate dates this fall
+
+Hi neighbors,
+
+Several utility heat pump rebates in our area have end dates on Nov 30 and Dec 31, 2026, and Maryland's Public Service Commission is reviewing 2027 amounts now. If you're thinking about replacing a furnace, AC or water heater, this free 2-minute check lists the programs that may fit and links to each official page:
+
+{link}
+
+It's free and doesn't ask for your email to see results. Happy to talk about it at the next meeting.</div>
+        <button class="btn btn-sm btn-ghost mt" data-copy>Copy</button></div>
+      <div class="card"><h3>For someone who rents</h3>
+        <div class="share-box" data-script>If your landlord is replacing the heat or AC, there may be rebates that cover part of it. This free check shows which ones, and you can send the summary to your landlord: {link}</div>
+        <button class="btn btn-sm btn-ghost mt" data-copy>Copy</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap split">
+    <div>
+      <h2>Print a flyer for the mailroom or community board</h2>
+      <p>The QR code is your personal link. Print it, pin it, done.</p>
+      <p class="no-print"><button class="btn" id="print-flyer">Print the flyer</button></p>
+      <p class="small muted">Please ask before posting in shared spaces, and never put flyers inside mailboxes.</p>
+    </div>
+    <div class="flyer" id="flyer">
+      <p class="eyebrow" style="color:#5c6b7a">DC · Maryland · Northern Virginia</p>
+      <h2>Heat with gas, oil or propane?</h2>
+      <p>Some heat pump rebates end <b>Nov 30</b> and <b>Dec 31, 2026</b>. See which ones may fit your home in 2 minutes. Official sources only. No sales calls.</p>
+      <div style="display:flex;gap:1rem;align-items:center">
+        <div class="qr" id="qr" aria-label="QR code to the rebate check"></div>
+        <div><b>Scan to check</b><br><span class="small">or visit dmvheatpumps.com/check</span><br><span class="tiny" style="color:#5c6b7a">Shared by a neighbor · Community first. Success follows.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <h2>Host a 30-minute porch talk</h2>
+      <p>Coffee, a few neighbors, one laptop. No sales pitches at the door.</p>
+      <ol>
+        <li><b>5 min:</b> Why now. Pull up the <a href="/alerts/">dates we're watching</a> on a phone or TV.</li>
+        <li><b>10 min:</b> Everyone runs the <a href="/check/">2-minute check</a> for their own home.</li>
+        <li><b>10 min:</b> Walk through the <a href="/before-you-sign/">Before You Sign</a> questions together.</li>
+        <li><b>5 min:</b> Swap notes: who has had an audit, which installers did a Manual J.</li>
+      </ol>
+      <p>Want a local pro or our team to come answer questions? Tell us below. If a pro comes, they're there to teach, not to sell, and we say up front who they are.</p>
+    </div>
+    <div class="card">
+      <h3>Request help with a porch talk or community night</h3>
+      <form data-lead="neighbor_night" data-ok="Thank you. We'll email you within 2 business days.">
+        <div class="row">
+          <div class="field"><label for="nn-name">Your name</label><input id="nn-name" name="first_name" type="text" required></div>
+          <div class="field"><label for="nn-email">Email</label><input id="nn-email" name="email" type="email" required></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="nn-zip">ZIP</label><input id="nn-zip" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" required></div>
+          <div class="field"><label for="nn-size">About how many people?</label><select id="nn-size" name="group_size"><option>3–10</option><option>10–30</option><option>30+ (HOA, church, civic group)</option></select></div>
+        </div>
+        <div class="field"><label for="nn-notes">Anything we should know? <span class="muted">(optional)</span></label><textarea id="nn-notes" name="notes" rows="3" maxlength="500"></textarea></div>
+        <label class="consent"><input type="checkbox" name="consent_contact" required> Email me about planning this event.</label>
+        <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn" type="submit">Send request</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>

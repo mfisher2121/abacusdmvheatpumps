@@ -1,0 +1,40 @@
+<!--
+path: /thanks/
+title: Thank You | DMV Heat Pumps
+description: Thank you. Check your inbox.
+noindex: yes
+-->
+<section class="hero center">
+  <div class="narrow">
+    {{CHAR:fluffle}}
+    <h1 id="ty-head">You're in. Check your inbox.</h1>
+    <p class="lede" id="ty-sub">If you don't see it in a few minutes, look in Promotions or Spam and drag it to your inbox, so the deadline alerts reach you.</p>
+  </div>
+</section>
+<section class="alt">
+  <div class="narrow center">
+    <h2>The one thing that helps most</h2>
+    <p class="lede">Send this to one neighbor who heats with gas, oil or propane. It takes ten seconds, and it might be the only way they hear about it before the deadline.</p>
+    <div data-share data-where="thanks" data-path="/check/" data-title="Heat pump rebates: 2-minute check" data-text="Thought of you. This free 2-minute check shows which heat pump rebates a DMV home may use, with the official sources. Some dates end Nov 30 and Dec 31."></div>
+    <p class="small mt"><a href="/neighbors/">Become a Neighbor Champion: three neighbors helped and we mail you a thank-you sticker pack →</a></p>
+  </div>
+</section>
+<section>
+  <div class="wrap grid">
+    <a class="card door" href="/before-you-sign/"><b>Before You Sign</b><span>Twelve questions to ask any installer.</span><span class="go">Get the checklist →</span></a>
+    <a class="card door" href="/alerts/"><b>Deadline alerts</b><span>An email before each date, and when 2027 amounts are set.</span><span class="go">Sign up →</span></a>
+    <a class="card door" href="/mbraceables/#craftsman"><b>Craftsman of the Month</b><span>Know a pro who does it right? Tell us their story.</span><span class="go">Nominate →</span></a>
+  </div>
+</section>
+<script>
+(function () {
+  var t = new URLSearchParams(location.search).get('t');
+  var copy = {
+    summary: ['Your summary is on its way.', 'Forward it to your installer or landlord. Every program in it links to the official page.'],
+    checklist: ['Your checklist is on its way.', 'Print it and keep it by the phone for when installers call back.'],
+    alerts: ['Almost done: confirm your email.', 'Click the link in the email we just sent, so the deadline alerts reach you.'],
+    craftsman_nomination: ['Thank you for your nomination.', 'We read every one. We will ask before publishing anything you wrote.']
+  }[t];
+  if (copy) { document.getElementById('ty-head').textContent = copy[0]; document.getElementById('ty-sub').textContent = copy[1]; }
+})();
+</script>

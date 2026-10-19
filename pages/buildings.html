@@ -1,0 +1,54 @@
+<!--
+path: /buildings/
+title: BEPS & Heat Pump Programs for DMV Buildings | DMV Heat Pumps
+description: For property managers, condo boards and HOAs in DC, Maryland and Northern Virginia: which building performance rules apply and where the official programs are.
+og: og-buildings
+-->
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Property managers · Condo boards · HOAs</p>
+    <h1>Building rules are changing. Start with what applies to you.</h1>
+    <p class="lede">Each place has its own rules for larger buildings. Here's the short version, with the official source for each, so your board can start from facts.</p>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap grid">
+    <div class="card prog-card st-open"><p class="mt0"><span class="badge badge-open">In effect</span></p><h3>Maryland BEPS</h3>
+      <p>Maryland's Building Energy Performance Standards cover commercial and apartment buildings of 35,000 sq ft or more. Owners report energy use every year and must meet emissions limits starting in 2030. It does not apply to houses.</p>
+      <p class="small muted">Montgomery County says its buildings are exempt from the state program because of HB 49, and follow only the county's own rules.</p>
+      <p class="src">Sources: <a href="https://www.mde.maryland.gov/beps" target="_blank" rel="noopener" data-official="md-beps">MDE: BEPS</a> · <a href="https://www.montgomerycountymd.gov/green/energy/beps.html" target="_blank" rel="noopener" data-official="moco-beps">Montgomery County BEPS</a>, checked Oct 15, 2026</p></div>
+    <div class="card prog-card st-open"><p class="mt0"><span class="badge badge-open">In effect</span></p><h3>DC BEPS</h3>
+      <p>From the Clean Energy DC Omnibus Act of 2018. The goal is to cut greenhouse gases and energy use 50% by 2032. Buildings over 10,000 sq ft must report energy and water use.</p>
+      <p class="small muted">Affordable buildings with 5+ units may qualify for the Affordable Housing Retrofit Accelerator (AHRA).</p>
+      <p class="src">Sources: <a href="https://doee.dc.gov/service/building-energy-performance-standards-beps" target="_blank" rel="noopener" data-official="dc-beps">DOEE: BEPS</a> · <a href="https://www.dcseu.com/retrofitaccelerator" target="_blank" rel="noopener" data-official="dc-ahra">DCSEU: Retrofit Accelerator</a>, checked {{CHECKED_DC}}</p></div>
+    <div class="card prog-card st-review"><p class="mt0"><span class="badge badge-review">Different</span></p><h3>Northern Virginia</h3>
+      <p>We found no building performance standard in force in Northern Virginia. Dominion runs programs for property managers.</p>
+      <p class="src">Source: <a href="https://www.domsavings.com/industry/property-management" target="_blank" rel="noopener" data-official="va-pm">Dominion: property management programs</a>, checked {{CHECKED_VA}}</p></div>
+  </div>
+</section>
+<section class="alt">
+  <div class="wrap split">
+    <div>
+      <h2>Get the building briefing</h2>
+      <p>One short email a month for property managers and boards: rule changes, program openings, and plain-English explainers you can forward to your board. Each fact links to its source.</p>
+      {{FRIEND:hootie:First, let's listen to what the building needs.}}
+    </div>
+    <div class="card">
+      <form data-lead="buildings" data-ok="Thanks. Your first briefing comes with the next issue.">
+        <div class="row">
+          <div class="field"><label for="b-name">Name</label><input id="b-name" name="first_name" type="text" required></div>
+          <div class="field"><label for="b-email">Email</label><input id="b-email" name="email" type="email" required></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="b-role">Your role</label><select id="b-role" name="role"><option>Property manager</option><option>Condo or co-op board</option><option>HOA</option><option>Owner</option><option>Other</option></select></div>
+          <div class="field"><label for="b-where">Where</label><select id="b-where" name="where"><option value="MD">Maryland</option><option value="DC">DC</option><option value="VA">Northern Virginia</option></select></div>
+        </div>
+        <div class="field"><label for="b-size">Building size <span class="muted">(optional)</span></label><input id="b-size" name="building_size" type="text" placeholder="e.g. 120 units, 90,000 sq ft"></div>
+        <label class="consent"><input type="checkbox" name="consent_newsletter" required> Email me the monthly building briefing. Unsubscribe anytime with one click.</label>
+        <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn" type="submit">Send me the briefing</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>

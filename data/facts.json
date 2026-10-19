@@ -1,0 +1,277 @@
+{
+  "_readme": "Every number on the site comes from this file. Each item carries its official source and the date it was checked. Copied from DMVHEATPUMPS@@/data/programs.json (MD, checked 2026-10-16) and the DC / Virginia plain-language rebate guides (checked 2026-10-15). Recheck after the PSC hearings (Oct 26-29, 2026), then weekly through Dec 31, 2026. Change 'checked' dates only after re-opening every source URL.",
+  "checked": {
+    "MD": "2026-10-16",
+    "DC": "2026-10-15",
+    "VA": "2026-10-15"
+  },
+  "next_check": "2026-10-30",
+  "deadlines": [
+    {
+      "date": "2026-10-26",
+      "end": "2026-10-29",
+      "juris": "MD",
+      "status": "review",
+      "title": "PSC hearings on Maryland's 2027-2029 EmPOWER plans",
+      "detail": "Case No. 9890. Utilities filed plans with 30% and 45% cuts. No 2027 amounts are set.",
+      "source": {"label": "Maryland PSC hearing schedule", "url": "https://webpscxb.pscmaryland.com/DMS/hearing"}
+    },
+    {
+      "date": "2026-11-30",
+      "juris": "MD",
+      "status": "ending",
+      "title": "Pepco and Delmarva: install finished for the higher switching amounts",
+      "detail": "For switching from gas, oil or propane to an air-source heat pump. Installs must be finished May 15 to Nov 30, 2026.",
+      "source": {"label": "Pepco HVAC Efficiency Program", "url": "https://homeenergysavings.pepco.com/md/residential/hvac-efficiency-program/participating-distributors"}
+    },
+    {
+      "date": "2026-12-01",
+      "juris": "MD",
+      "status": "ending",
+      "title": "Washington Gas (Maryland): send your application and papers",
+      "detail": "The programs end Dec 31, 2026 under House Bill 1532. Applications should go in by Dec 1.",
+      "source": {"label": "Washington Gas Maryland programs", "url": "https://wgsmartsavings.com/programs-rebates/home/md"}
+    },
+    {
+      "date": "2026-12-31",
+      "juris": "MD",
+      "status": "ending",
+      "title": "Pepco Home Performance: contractor reserves your rebates",
+      "detail": "For Pepco's limited-time Home Performance offer.",
+      "source": {"label": "Pepco Home Performance with ENERGY STAR", "url": "https://homeenergysavings.pepco.com/md/residential/home-performance-with-energy-star-program"}
+    },
+    {
+      "date": "2026-12-31",
+      "juris": "MD",
+      "status": "ending",
+      "title": "Potomac Edison: equipment bought and installed",
+      "detail": "Applies to Potomac Edison's HVAC program.",
+      "source": {"label": "Potomac Edison HVAC Program", "url": "https://energysavemd-home.com/hvac/"}
+    },
+    {
+      "date": "2027-09-30",
+      "juris": "DC",
+      "status": "open",
+      "title": "DC: DCSEU rebates for installs Oct 1, 2026 to Sep 30, 2027",
+      "detail": "Apply within 30 days of the install.",
+      "source": {"label": "DCSEU Heating & Cooling", "url": "https://www.dcseu.com/residential-rebates/heating-cooling"}
+    }
+  ],
+  "utilities": {
+    "MD": ["BGE", "Pepco", "Delmarva Power", "Potomac Edison", "SMECO"],
+    "VA": ["Dominion Energy", "A co-op (NOVEC or other)"]
+  },
+  "programs": [
+    {
+      "id": "md-home-performance",
+      "juris": "MD",
+      "name": "EmPOWER Home Performance with ENERGY STAR",
+      "status": "ending",
+      "kinds": ["whole", "heatpump", "unsure"],
+      "utilities": ["BGE", "Pepco", "Delmarva Power", "Potomac Edison", "SMECO"],
+      "amount": "Up to $10,000 or 75% of project cost. Up to $15,000 or 75% when the project switches a gas, oil or propane furnace, boiler or water heater to a qualifying electric heat pump.",
+      "note": "Starts with a home energy audit. Heating and cooling rebates must be bundled with air sealing and insulation. The cap is a ceiling, not a promise: the rebate is based on modeled energy savings.",
+      "status_note": "Open now. Pepco reservations close Dec 31, 2026, and 2027 levels are not set.",
+      "sources": [
+        {"label": "BGE Home Performance incentives table", "url": "https://bgesmartenergy.com/sites/default/files/57560_BGE_Res_HPwES-Incentives_Table_Update_v3_Web_RELEASE.pdf"},
+        {"label": "Pepco Home Performance with ENERGY STAR", "url": "https://homeenergysavings.pepco.com/md/residential/home-performance-with-energy-star-program"},
+        {"label": "Delmarva Home Performance rebates", "url": "https://homeenergysavings.delmarva.com/md/residential/home-performance-with-energy-star-program/rebates"},
+        {"label": "Potomac Edison Home Performance", "url": "https://energysavemd-home.com/home-performance/"},
+        {"label": "SMECO Home Energy Improvement Program", "url": "https://www.smeco.coop/energy-efficiency/residential-programs/home-energy-improvement-program/"}
+      ]
+    },
+    {
+      "id": "md-hvac-discounts",
+      "juris": "MD",
+      "name": "Heat pump rebates through participating contractors",
+      "status": "ending",
+      "kinds": ["whole", "heatpump", "unsure"],
+      "utilities": ["BGE", "Pepco", "Delmarva Power", "Potomac Edison", "SMECO"],
+      "amount": "$375 to $7,100 depending on utility and equipment. Switching from gas, oil or propane pays more: up to $3,500 at Pepco, Delmarva and Potomac Edison ($4,000 for cold-climate at Potomac Edison).",
+      "note": "No audit needed for these. Ask your contractor whether the discount is applied on the invoice.",
+      "status_note": "Pepco and Delmarva's higher switching amounts need the install finished by Nov 30, 2026. Potomac Edison's program runs through Dec 31, 2026.",
+      "sources": [
+        {"label": "Pepco HVAC Efficiency Program", "url": "https://homeenergysavings.pepco.com/md/residential/hvac-efficiency-program/participating-distributors"},
+        {"label": "Delmarva HVAC Efficiency Program", "url": "https://homeenergysavings.delmarva.com/md/residential/hvac-efficiency-program/participating-distributors"},
+        {"label": "Potomac Edison HVAC Program", "url": "https://energysavemd-home.com/hvac/"},
+        {"label": "SMECO Heating and Cooling Rebates", "url": "https://www.smeco.coop/energy-efficiency/residential-programs/heating-cooling-rebates/members/"},
+        {"label": "BGE Heating and Cooling", "url": "https://bgesmartenergy.com/residential/help-me-save/heating-cooling"}
+      ]
+    },
+    {
+      "id": "md-hpwh",
+      "juris": "MD",
+      "name": "Heat pump water heater rebates",
+      "status": "open",
+      "kinds": ["water", "whole", "unsure"],
+      "utilities": ["BGE", "Pepco", "Potomac Edison", "SMECO"],
+      "amount": "Up to $1,600 instant (BGE, Pepco, SMECO), $1,500 at Potomac Edison (up to $2,500 when switching fuels). BGE also covers 75% of prep costs, up to $1,500.",
+      "note": "Ask your plumber or HVAC contractor whether the instant rebate is applied on the invoice.",
+      "status_note": "Open under the 2024-2026 EmPOWER cycle. Amounts after Dec 31, 2026 depend on the PSC.",
+      "sources": [
+        {"label": "BGE electrification", "url": "https://bgesmartenergy.com/residential/electrification"},
+        {"label": "Pepco Maryland home energy savings", "url": "https://homeenergysavings.pepco.com/"},
+        {"label": "Potomac Edison HVAC Program", "url": "https://energysavemd-home.com/hvac/"},
+        {"label": "SMECO Heating and Cooling Rebates", "url": "https://www.smeco.coop/energy-efficiency/residential-programs/heating-cooling-rebates/members/"}
+      ]
+    },
+    {
+      "id": "md-washington-gas",
+      "juris": "MD",
+      "name": "Washington Gas EmPOWER (Maryland gas customers)",
+      "status": "ending",
+      "kinds": ["whole", "heatpump", "water", "unsure"],
+      "fuels": ["gas"],
+      "amount": "Varies. Gas EmPOWER incentives were removed by House Bill 1532.",
+      "note": "Only if you already have an open Washington Gas application.",
+      "status_note": "Ends Dec 31, 2026. Send your application and papers by Dec 1.",
+      "sources": [
+        {"label": "Washington Gas Maryland programs", "url": "https://wgsmartsavings.com/programs-rebates/home/md"},
+        {"label": "MEA: EmPOWER Maryland", "url": "https://energy.maryland.gov/pages/facts/empower.aspx"}
+      ]
+    },
+    {
+      "id": "md-hear-homes",
+      "juris": "MD",
+      "name": "Federal Home Energy Rebates (HOMES and HEAR) in Maryland",
+      "status": "not-launched",
+      "kinds": ["whole", "heatpump", "water", "unsure"],
+      "amount": "Not set for Maryland until DOE approves the plans.",
+      "note": "Do not budget a project around these until MEA announces a launch.",
+      "status_note": "Not open. MEA resubmitted both applications to the U.S. Department of Energy on Sep 30, 2026.",
+      "sources": [
+        {"label": "MEA: IRA Home Energy Rebate Programs", "url": "https://energy.maryland.gov/Pages/IRArebates.aspx"}
+      ]
+    },
+    {
+      "id": "md-equity",
+      "juris": "MD",
+      "name": "Residential Energy Equity heat pump program (income-qualified)",
+      "status": "upcoming",
+      "kinds": ["whole", "heatpump", "unsure"],
+      "income": true,
+      "amount": "$72.5 million total for the program (not a per-home amount).",
+      "note": "Residents apply through participating organizations, not to MEA. Partners have not been announced.",
+      "status_note": "Starts in state fiscal year 2027.",
+      "sources": [
+        {"label": "MEA RFI: Residential Energy Equity heat pump rebate program", "url": "https://energy.maryland.gov/SiteAssets/Pages/ResidentialEnergyEquity/RFI_%20Residential%20Energy%20Equity%20-%20Heat%20Pump%20Rebate%20Program%207_31_26.pdf"}
+      ]
+    },
+    {
+      "id": "dc-dcseu",
+      "juris": "DC",
+      "name": "DCSEU heat pump rebates (any income)",
+      "status": "open",
+      "kinds": ["whole", "heatpump", "water", "unsure"],
+      "amount": "Ducted or ductless heat pump: $1,000 to $1,500 electric-to-electric, $4,000 to $5,000 gas-to-electric. Heat pump water heater: $750 to $1,600.",
+      "note": "Needs a DC Master Refrigeration and Air Conditioning Mechanic licensed installer and a DOB mechanical permit. Homes of 4 units or less. Take before and after photos. Apply within 30 days of the install.",
+      "status_note": "For installs Oct 1, 2026 to Sep 30, 2027. DCSEU marks every amount \"Rebates subject to change.\"",
+      "sources": [
+        {"label": "DCSEU Heating & Cooling", "url": "https://www.dcseu.com/residential-rebates/heating-cooling"},
+        {"label": "DCSEU Online Rebate Center", "url": "https://rebates.dcseu.com/dcseu/home"}
+      ]
+    },
+    {
+      "id": "dc-panel",
+      "juris": "DC",
+      "name": "DCSEU panel and circuit rebates",
+      "status": "open",
+      "kinds": ["whole", "heatpump", "water", "unsure"],
+      "fuels": ["gas", "oil"],
+      "amount": "$2,000 for a panel upgrade to 200 amps. $400 per new or upgraded circuit, up to 3 per home.",
+      "note": "Only for homes replacing gas or oil heat or water heat with a heat pump or heat pump water heater.",
+      "status_note": "In effect.",
+      "sources": [
+        {"label": "DCSEU Electrification", "url": "https://www.dcseu.com/residential-rebates/electrify"}
+      ]
+    },
+    {
+      "id": "dc-ahep",
+      "juris": "DC",
+      "name": "Affordable Home Electrification Program (AHEP)",
+      "status": "open",
+      "kinds": ["whole", "heatpump", "water", "unsure"],
+      "income": true,
+      "amount": "No cost if you qualify: heat pump, heat pump water heater, induction stove, heat pump dryer and thermostat.",
+      "note": "You may qualify if you get SNAP, TANF, SSI, LIHEAP, Weatherization Assistance or Solar for All, or by household income. AHEP sends its own contractors, so apply before you hire anyone.",
+      "status_note": "In effect. Projects need DOEE approval.",
+      "sources": [
+        {"label": "DCSEU: find out if you qualify", "url": "https://www.dcseu.com/homeowners-renters/qualify"},
+        {"label": "DCSEU Affordable Home Electrification", "url": "https://www.dcseu.com/affordable-home-electrification"}
+      ]
+    },
+    {
+      "id": "va-dominion",
+      "juris": "VA",
+      "name": "Dominion Energy Home Energy Evaluation",
+      "status": "open",
+      "kinds": ["whole", "heatpump", "water", "unsure"],
+      "utilities": ["Dominion Energy"],
+      "amount": "Replacing electric baseboard heat with an air-source heat pump: $1,000 to $1,500 by efficiency. Heat pump upgrade: $156 to $312. Heat pump water heater: $234. Insulation and air sealing paid per square foot.",
+      "note": "\"Fuel switching is not permitted within the rebate program,\" so gas-to-heat-pump jobs don't get these. Insulation and air sealing rebates need a full audit by a BPI Building Analyst first.",
+      "status_note": "In effect until fully subscribed. Amounts may change without notice.",
+      "sources": [
+        {"label": "Dominion Home Energy Evaluation", "url": "https://www.domsavings.com/home-program/home-energy-evaluation"}
+      ]
+    },
+    {
+      "id": "va-washington-gas",
+      "juris": "VA",
+      "name": "Washington Gas dual-fuel heat pump rebate (Virginia)",
+      "status": "open",
+      "kinds": ["heatpump", "unsure"],
+      "fuels": ["gas"],
+      "amount": "$2,000 for a dual-fuel heat pump with a new furnace. $1,400 when you keep your furnace.",
+      "note": "You must be replacing a central air conditioner. Replacing an existing heat pump is not eligible. Use a contractor in Washington Gas's network.",
+      "status_note": "In effect.",
+      "sources": [
+        {"label": "Washington Gas VA Home Heating", "url": "https://wgsmartsavings.com/programs-rebates/va/home-heating"}
+      ]
+    },
+    {
+      "id": "va-wap",
+      "juris": "VA",
+      "name": "Weatherization Assistance Program (income-qualified)",
+      "status": "open",
+      "kinds": ["whole", "heatpump", "unsure"],
+      "income": true,
+      "amount": "Air sealing, insulation, and repair or replacement of unsafe or inefficient heating and cooling, through local nonprofits.",
+      "note": "Apply with the local provider where the home is.",
+      "status_note": "In effect.",
+      "sources": [
+        {"label": "Virginia DHCD Weatherization", "url": "https://www.dhcd.virginia.gov/wx"}
+      ]
+    },
+    {
+      "id": "va-hear-homes",
+      "juris": "VA",
+      "name": "Federal Home Energy Rebates (HOMES and HEAR) in Virginia",
+      "status": "not-launched",
+      "kinds": ["whole", "heatpump", "water", "unsure"],
+      "amount": "Not available now. Virginia Energy cannot give a launch date.",
+      "note": "Virginia Energy warns: beware of contractors who promise eligibility before launch.",
+      "status_note": "Not yet live. Virginia sent updated plans to DOE in September 2026.",
+      "sources": [
+        {"label": "Virginia Energy Home Energy Rebates FAQ", "url": "https://energy.virginia.gov/energy-efficiency/HomeEnergyRebatesFrequentlyAskedQuestions.shtml"}
+      ]
+    },
+    {
+      "id": "fed-25c",
+      "juris": "ALL",
+      "name": "Federal heat pump tax credit (25C)",
+      "status": "ended",
+      "kinds": ["whole", "heatpump", "water", "unsure"],
+      "amount": "Was 30% of cost, up to $2,000. Not available for 2026 installs.",
+      "note": "If a 2026 quote counts on this credit, ask why.",
+      "status_note": "Ended for heat pumps placed in service after Dec 31, 2025.",
+      "sources": [
+        {"label": "IRS: Energy Efficient Home Improvement Credit", "url": "https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit"}
+      ]
+    }
+  ],
+  "license_lookups": {
+    "MD": {"label": "Maryland Department of Labor HVACR license lookup", "url": "https://www.labor.maryland.gov/license/hvacr/"},
+    "DC": {"label": "DC license search", "url": "https://govservices.dcra.dc.gov/oplaportal/Home/GetLicenseSearchDetails"},
+    "VA": {"label": "Virginia DPOR License Lookup", "url": "https://www.dpor.virginia.gov/LicenseLookup"}
+  }
+}

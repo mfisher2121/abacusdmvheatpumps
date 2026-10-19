@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="96" viewBox="0 0 360 96" role="img" aria-label="Listed on DMV Heat Pumps">
+<rect x="1" y="1" width="358" height="94" rx="18" fill="#ffffff" stroke="#0c5c4c" stroke-width="2"/>
+<circle cx="18" cy="40" r="14" fill="#9ea8b3"/><circle cx="62" cy="40" r="14" fill="#9ea8b3"/>
+<circle cx="40" cy="54" r="26" fill="#9ea8b3"/>
+<circle cx="32" cy="52" r="3.4" fill="#1a2332"/><circle cx="48" cy="52" r="3.4" fill="#1a2332"/>
+<ellipse cx="40" cy="61" rx="3.4" ry="2.6" fill="#1a2332" opacity=".75"/>
+<text x="82" y="42" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#5c6b7a" letter-spacing="1">LISTED ON</text>
+<text x="82" y="70" font-family="Georgia, serif" font-size="27" font-weight="700" fill="#1a2332">DMV Heat Pumps</text>
+</svg>

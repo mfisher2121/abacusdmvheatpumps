@@ -1,0 +1,48 @@
+<!--
+path: /alerts/
+title: Heat Pump Rebate Deadline Alerts for DC, MD & NoVA | DMV Heat Pumps
+description: Get an email before the Nov 30 and Dec 31, 2026 heat pump rebate dates and when Maryland's PSC sets 2027 amounts. Texts optional.
+og: og-alerts
+-->
+<section class="hero">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Deadline alerts</p>
+      <h1>Hear about the deadline before it passes.</h1>
+      <p class="lede">We watch the official program pages and Maryland's Public Service Commission so you don't have to. You get a short email before each date, and when 2027 amounts are set.</p>
+      <ul>
+        <li>About 1 to 4 emails a month. Fewer after December.</li>
+        <li>Each alert links to the official page, with the date we checked it.</li>
+        <li>One click to leave. We never sell your information.</li>
+      </ul>
+      {{FRIEND:scout:Here's where this fact comes from.}}
+    </div>
+    <div class="card">
+      <h2>Sign up</h2>
+      <form data-lead="alerts" data-next="/thanks/">
+        <div class="field"><label for="a-email">Email</label><input id="a-email" name="email" type="email" required autocomplete="email"></div>
+        <div class="row">
+          <div class="field"><label for="a-state">Where</label>
+            <select id="a-state" name="where"><option value="MD">Maryland</option><option value="DC">DC</option><option value="VA">Northern Virginia</option></select></div>
+          <div class="field"><label for="a-zip">ZIP <span class="muted">(optional)</span></label><input id="a-zip" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code"></div>
+        </div>
+        <div class="field"><label for="a-util">Electric company <span class="muted">(optional)</span></label>
+          <select id="a-util" name="electric_utility"><option value="">Not sure</option><option>BGE</option><option>Pepco</option><option>Delmarva Power</option><option>Potomac Edison</option><option>SMECO</option><option>Dominion Energy</option><option>NOVEC or other co-op</option></select></div>
+        <label class="consent"><input type="checkbox" name="consent_email_alerts" required> Email me alerts about DMV heat pump rebate deadlines and program changes. About 1–4 emails a month. Unsubscribe anytime with one click.</label>
+        <div class="field mt" style="margin-top:1.2rem"><label for="a-phone">Mobile number <span class="muted">(only if you want texts)</span></label><input id="a-phone" name="mobile_phone" type="tel" autocomplete="tel"></div>
+        <label class="consent"><input type="checkbox" name="consent_sms"> <span><b>Text me deadline alerts.</b> By checking this box and entering my number, I agree that DMV Heat Pumps may send me recurring automated text messages about rebate deadlines and program changes at the number above. Consent is not required to use this site or to buy anything. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel, HELP for help.</span></label>
+        <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn" type="submit">Send me alerts</button>
+        <p class="form-msg" aria-live="polite"></p>
+        <p class="tiny muted">See our <a href="/privacy/">privacy notice</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>The dates we're watching now</h2>
+    {{DEADLINES}}
+  </div>
+</section>

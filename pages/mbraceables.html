@@ -1,0 +1,81 @@
+<!--
+path: /mbraceables/
+title: Meet the Mbraceables | Tiny Friends. Big Feelings. Brave Choices.
+description: The Mbraceables are felted friends who guide every step of a home project with a feeling and a next step. Plus Craftsman of the Month nominations.
+og: og-mbraceables
+-->
+<section class="hero center">
+  <div class="narrow">
+    <p class="eyebrow">The Mbraceables</p>
+    <h1>Tiny friends. Big feelings. Brave choices.</h1>
+    <p class="lede">A heat pump is a big, sometimes scary decision. The Mbraceables make it feel human. Each one carries a feeling and one next step. They cheer you on; trained people and official sources carry the facts.</p>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap">{{CAST}}</div>
+</section>
+<section class="alt">
+  <div class="wrap split">
+    <div>
+      <h2>Where they came from</h2>
+      <p>The Mbraceables began in 2023 as <i>Kevin the Koala: Embracing His True Colors</i>, a story about an overlooked kid who discovers his quiet gift is a superpower. That story, not a sales funnel, set the values of everything we build: shared success, every voice heard, and the magic that happens when different gifts come together.</p>
+      <p class="quote" style="margin:1.5rem 0">“True success is shared success.”</p>
+    </div>
+    <div class="card">
+      <h3>Our promises about the Mbraceables</h3>
+      <ul class="small">
+        <li>They never state rebate amounts, deadlines or rules. Those come only from official sources.</li>
+        <li>They never endorse a business.</li>
+        <li>We don't market to children or collect data from children.</li>
+        <li>Plush friends ship only after real toy-safety testing.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="craftsman">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">Craftsman of the Month</p>
+      <h2>Know someone who does it right?</h2>
+      <p>Each month we tell the story of one local owner or tech, chosen for character, not ad spend. The one who came back on a Saturday. The one who told you that you didn't need the bigger system. The one who left the attic cleaner than they found it.</p>
+      <p>Homeowners and fellow pros can nominate. We only share names, stories or photos with everyone's written consent.</p>
+      {{FRIEND:willie:Let's celebrate the people who do it right.}}
+    </div>
+    <div class="card">
+      <form data-lead="craftsman_nomination" data-next="/thanks/">
+        <div class="row">
+          <div class="field"><label for="n-who">Who are you nominating?</label><input id="n-who" name="nominee_name" type="text" required></div>
+          <div class="field"><label for="n-co">Their company</label><input id="n-co" name="nominee_company" type="text"></div>
+        </div>
+        <div class="field"><label for="n-why">What did they do?</label><textarea id="n-why" name="story" rows="4" maxlength="1200" required placeholder="Tell us the moment you knew they were the real thing."></textarea></div>
+        <div class="row">
+          <div class="field"><label for="n-name">Your name</label><input id="n-name" name="first_name" type="text" required></div>
+          <div class="field"><label for="n-email">Your email</label><input id="n-email" name="email" type="email" required></div>
+        </div>
+        <div class="field"><label for="n-rel">You are their</label><select id="n-rel" name="relationship"><option>Customer</option><option>Coworker</option><option>Fellow pro</option><option>Neighbor</option><option>Other</option></select></div>
+        <label class="consent"><input type="checkbox" name="consent_contact" required> Email me about this nomination. We'll ask before publishing anything you wrote, and we ask the nominee too.</label>
+        <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn btn-heart" type="submit">Send nomination</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="narrow center">
+    <h2>Follow the Mbraceables</h2>
+    <p>Short stories about home, community and brave choices. Every number on screen shows its source and date.</p>
+    <form data-lead="newsletter" data-ok="Welcome. Your first letter comes with the next issue.">
+      <div class="row">
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required></div>
+        <div class="field" style="align-self:end"><button class="btn" type="submit" style="width:100%">Join the community letter</button></div>
+      </div>
+      <label class="consent"><input type="checkbox" name="consent_newsletter" required> Send me the monthly community newsletter. Unsubscribe anytime with one click.</label>
+      <label class="consent"><input type="checkbox" name="adult" required> I am 18 or older.</label>
+      <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <p class="form-msg" aria-live="polite"></p>
+    </form>
+  </div>
+</section>

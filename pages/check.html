@@ -1,0 +1,188 @@
+<!--
+path: /check/
+title: 2-Minute Heat Pump Rebate Check for DC, MD & NoVA | DMV Heat Pumps
+description: Answer a few quick questions and see which heat pump rebates your home may use, quoted from the official programs with the date we checked them.
+og: og-check
+scripts: <script src="/assets/facts.js"></script><script src="/assets/check.js" defer></script>
+-->
+<section class="hero" style="padding-bottom:1rem">
+  <div class="quiz" id="quiz-intro">
+    <p class="eyebrow">2-minute rebate check</p>
+    <h1>Which rebates may fit your home?</h1>
+    <p class="lede">A few quick taps. No email needed to see your results.</p>
+    {{FRIEND:kevin:Let's take it one step at a time.}}
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="quiz">
+    <form id="quiz" onsubmit="return false">
+      <div class="progress" aria-hidden="true"><i id="q-bar"></i></div>
+
+      <fieldset class="q">
+        <legend>Where is the home?</legend>
+        <p class="hint">Programs are different in each place.</p>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="where" value="MD"><span>Maryland</span></label>
+          <label class="opt"><input type="radio" name="where" value="DC"><span>Washington, DC</span></label>
+          <label class="opt"><input type="radio" name="where" value="VA"><span>Northern Virginia<small>Arlington, Alexandria, Fairfax, Loudoun, Prince William</small></span></label>
+          <label class="opt"><input type="radio" name="where" value="other"><span>Somewhere else</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q" data-only="MD" hidden>
+        <legend>Who sends your electric bill?</legend>
+        <p class="hint">Most Maryland rebates run through your electric company.</p>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="utility" value="BGE"><span>BGE</span></label>
+          <label class="opt"><input type="radio" name="utility" value="Pepco"><span>Pepco</span></label>
+          <label class="opt"><input type="radio" name="utility" value="Delmarva Power"><span>Delmarva Power</span></label>
+          <label class="opt"><input type="radio" name="utility" value="Potomac Edison"><span>Potomac Edison</span></label>
+          <label class="opt"><input type="radio" name="utility" value="SMECO"><span>SMECO</span></label>
+          <label class="opt"><input type="radio" name="utility" value="unsure"><span>Not sure<small>We'll show every utility's programs</small></span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q" data-only="VA" hidden>
+        <legend>Who sends your electric bill?</legend>
+        <p class="hint">Dominion runs the main program in Northern Virginia.</p>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="utility" value="Dominion Energy"><span>Dominion Energy</span></label>
+          <label class="opt"><input type="radio" name="utility" value="A co-op (NOVEC or other)"><span>NOVEC or another co-op</span></label>
+          <label class="opt"><input type="radio" name="utility" value="unsure"><span>Not sure</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q" hidden>
+        <legend>How do you heat your home now?</legend>
+        <p class="hint">Switching from gas, oil or propane often opens bigger rebates.</p>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="heat" value="gas"><span>Natural gas</span></label>
+          <label class="opt"><input type="radio" name="heat" value="oil"><span>Oil or propane</span></label>
+          <label class="opt"><input type="radio" name="heat" value="electric"><span>Electric<small>Baseboard, electric furnace</small></span></label>
+          <label class="opt"><input type="radio" name="heat" value="heatpump"><span>I already have a heat pump</span></label>
+          <label class="opt"><input type="radio" name="heat" value="unsure"><span>Not sure</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q" hidden>
+        <legend>What are you thinking about?</legend>
+        <p class="hint">You can change your mind later.</p>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="project" value="whole"><span>Make the whole home comfortable<small>Audit, sealing, insulation, then heating and cooling</small></span></label>
+          <label class="opt"><input type="radio" name="project" value="heatpump"><span>Replace my heating and cooling</span></label>
+          <label class="opt"><input type="radio" name="project" value="water"><span>Replace my water heater</span></label>
+          <label class="opt"><input type="radio" name="project" value="unsure"><span>Just learning</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q" hidden>
+        <legend>What kind of home is it?</legend>
+        <p class="hint">Some programs are only for owners, or for smaller buildings.</p>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="home" value="own"><span>I own a house or townhouse</span></label>
+          <label class="opt"><input type="radio" name="home" value="condo"><span>I own a condo or co-op unit</span></label>
+          <label class="opt"><input type="radio" name="home" value="rent"><span>I rent</span></label>
+          <label class="opt"><input type="radio" name="home" value="building"><span>I manage a building with 5+ units</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q" hidden>
+        <legend>Show income-based programs too?</legend>
+        <p class="hint">Some programs pay more, or all of it, for households under an income limit or getting SNAP, LIHEAP or similar help. We don't ask your income, and this answer never leaves your screen.</p>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="income" value="yes"><span>Yes, show them</span></label>
+          <label class="opt"><input type="radio" name="income" value="no"><span>No thanks</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="q" hidden>
+        <legend>When are you hoping to do this?</legend>
+        <p class="hint">Some programs have end dates this fall.</p>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="timeline" value="nov"><span>Before the end of November</span></label>
+          <label class="opt"><input type="radio" name="timeline" value="dec"><span>Before the end of the year</span></label>
+          <label class="opt"><input type="radio" name="timeline" value="later"><span>2027 or later</span></label>
+          <label class="opt"><input type="radio" name="timeline" value="unsure"><span>Not sure yet</span></label>
+        </div>
+      </fieldset>
+
+      <div class="quiz-nav">
+        <button type="button" class="btn btn-ghost" id="q-back" hidden>Back</button>
+        <button type="button" class="btn" id="q-next">Next</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="wrap" id="results" hidden aria-live="polite"></div>
+</section>
+
+<template id="tpl-plan">
+  <h2 class="mt">Your plan, in the right order</h2>
+  <div class="steps">
+    <div class="card step-card"><h3>Book an energy audit</h3><p class="small">It opens the biggest whole-home programs and tells you what your home needs.</p>{{FRIEND:whisper:First, listen to your home.}}</div>
+    <div class="card step-card"><h3>Seal the leaks</h3><p class="small">Ask for a blower door test before and after.</p>{{FRIEND:scout:Let's find where the air sneaks out.}}</div>
+    <div class="card step-card"><h3>Insulate</h3><p class="small">A tighter home can need a smaller heat pump.</p>{{FRIEND:fluffle:A warm hug for your house.}}</div>
+    <div class="card step-card"><h3>Size it with a Manual J</h3><p class="small">Ask for the room-by-room load calculation in writing.</p>{{FRIEND:sparky:Now you're ready to switch.}}</div>
+  </div>
+</template>
+
+<template id="tpl-next">
+  <div class="grid-2 mt">
+    <div class="card">
+      <h2>Email me this summary</h2>
+      <p class="small">Your programs, the source links, and your dates, in one email you can forward to your installer or landlord.</p>
+      <form data-lead="summary" data-with-answers data-next="/thanks/">
+        <div class="field"><label for="s-email">Email</label><input id="s-email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="s-zip">ZIP <span class="muted">(optional, for local dates)</span></label><input id="s-zip" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}"></div>
+        <label class="consent"><input type="checkbox" name="consent_summary" required> Email me this summary. This sends one email.</label>
+        <label class="consent"><input type="checkbox" name="consent_email_alerts"> Also email me before each deadline and when 2027 amounts are set (about 1–4 emails a month).</label>
+        <label class="consent"><input type="checkbox" name="consent_newsletter"> Also send the monthly community newsletter.</label>
+        <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn" type="submit">Email my summary</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="card">
+      <h2>Before you sign anything</h2>
+      <p>Twelve questions to ask any installer, plus a one-page deadline calendar. Print it and keep it by the phone.</p>
+      <a class="btn btn-ghost" href="/before-you-sign/">Get the checklist</a>
+      <hr style="border:0;border-top:1px solid var(--line);margin:1.4rem 0">
+      <h2>Know someone who heats with gas or oil?</h2>
+      <p class="small">Send them the same 2-minute check. Your link counts every neighbor you help.</p>
+      <div data-share data-where="results" data-path="/check/" data-title="Heat pump rebates: 2-minute check" data-text="I just checked which heat pump rebates my home may use. Free, 2 minutes, official sources only. Some dates end Nov 30 and Dec 31."></div>
+    </div>
+  </div>
+  <div class="card mt">
+    <h2>Want to talk with an installer?</h2>
+    <p>Tell us, and we'll reply with installers who serve your area and do an audit and load calculation first. We never pass your details to anyone until you see their names and say yes. Some installers pay to receive matched requests, and we always tell you which.</p>
+    <form data-lead="match_interest" data-with-answers data-ok="Thanks. We'll email you the names first. Nothing is shared until you say yes.">
+      <div class="row">
+        <div class="field"><label for="m-name">First name</label><input id="m-name" name="first_name" type="text" required autocomplete="given-name"></div>
+        <div class="field"><label for="m-email">Email</label><input id="m-email" name="email" type="email" required autocomplete="email"></div>
+      </div>
+      <div class="field"><label for="m-zip">ZIP</label><input id="m-zip" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" required></div>
+      <label class="consent"><input type="checkbox" name="consent_contact" required> Email me installer names that serve my area. I understand nothing is shared with any installer until I approve the names.</label>
+      <label class="consent"><input type="checkbox" name="adult" required> I am 18 or older.</label>
+      <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn" type="submit">Send me installer names</button>
+      <p class="form-msg" aria-live="polite"></p>
+    </form>
+  </div>
+  <p class="small muted mt"><a href="/check/">Start over</a> · Results come from official program pages. Programs decide who qualifies and how much they pay.</p>
+</template>
+
+<template id="tpl-alerts">
+  <div class="card mt narrow">
+    <form data-lead="area_waitlist" data-ok="Thanks. We'll email you if we add your area.">
+      <div class="row">
+        <div class="field"><label for="w-email">Email</label><input id="w-email" name="email" type="email" required></div>
+        <div class="field"><label for="w-zip">ZIP</label><input id="w-zip" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" required></div>
+      </div>
+      <label class="consent"><input type="checkbox" name="consent_email_alerts" required> Email me once if DMV Heat Pumps starts covering my area.</label>
+      <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn" type="submit">Tell me</button>
+      <p class="form-msg" aria-live="polite"></p>
+    </form>
+  </div>
+</template>

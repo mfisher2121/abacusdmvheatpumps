@@ -1,0 +1,103 @@
+<!--
+path: /installers/
+title: For Heat Pump Installers in DC, MD & NoVA: Get Listed | DMV Heat Pumps
+description: A free listing for honest, envelope-first heat pump installers in the DMV. Homeowners arrive informed, with their programs and deadlines already in hand.
+theme: ops
+og: og-installers
+-->
+<section class="hero">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">For installers · DC · Maryland · Northern Virginia</p>
+      <h1>Homeowners who did their homework are looking for you.</h1>
+      <p class="lede">They arrive knowing their programs, their dates, and the questions to ask. They want an audit and a Manual J. If that's how you already work, you belong here.</p>
+      <div class="hero-ctas"><a class="btn btn-lg" href="#apply">Get listed free</a><a class="btn btn-lg btn-ghost" href="#cheatsheet">Get the deadline cheat sheet</a></div>
+    </div>
+    <div class="card">
+      <h3>We stand with owners who lead with integrity</h3>
+      <p class="small">Some companies are run on ticket size, close rates and upsells. We built this for the ones who take pride in honest, ethical work and go home knowing they did right by every family.</p>
+      <p class="small">Listings are never for sale. Sponsorships are always labeled. We never tell homeowners a listing means approval. The badge says exactly what it is: <b>Listed on DMV Heat Pumps</b>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>What every listing needs</h2>
+    <div class="grid mt">
+      <div class="card"><h3>License we can look up</h3><p class="small">We check it on the official state site and show the date we checked.</p></div>
+      <div class="card"><h3>Real reviews</h3><p class="small">From real customers on public, independent sites.</p></div>
+      <div class="card"><h3>Clear written pricing</h3><p class="small">Estimates in writing, easy to understand, incentives as line items.</p></div>
+      <div class="card"><h3>Envelope first</h3><p class="small">An audit and a load calculation before sizing any system.</p></div>
+      <div class="card"><h3>No pressure</h3><p class="small">Homeowners get time to think and to compare.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What you get</h2>
+    <div class="grid mt">
+      <div class="card"><h3>A free listing</h3><p class="small">On your city pages, with the services you offer and the utility contractor lists you're on, quoted from the official lists with dates.</p></div>
+      <div class="card"><h3>Matched requests, only with consent</h3><p class="small">A homeowner sees your name and says yes before we share anything. At most three installers per request. No reselling, ever. Bad contacts get credited.</p></div>
+      <div class="card"><h3>Craftsman of the Month</h3><p class="small">One local owner a month, chosen for character, not ad spend. Peers and customers nominate.</p></div>
+      <div class="card"><h3>A badge for your site</h3><p class="small">"Listed on DMV Heat Pumps," linking to your listing. Homeowners can see what was checked and when.</p></div>
+      <div class="card"><h3>Training, coming 2027</h3><p class="small">Envelope-first and BEPS-ready skills for your techs. Join the waitlist in the form below.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="cheatsheet">
+  <div class="wrap split">
+    <div>
+      <h2>The dates your homeowners are asking about</h2>
+      <p>Tape this to the truck. One more thing: the federal 25C credit ended for heat pumps placed in service after Dec 31, 2025. Please take it out of 2026 quotes.</p>
+      <p class="src">Source: <a href="https://www.irs.gov/credits-deductions/energy-efficient-home-improvement-credit" target="_blank" rel="noopener" data-official="fed-25c">IRS: Energy Efficient Home Improvement Credit</a>, checked {{CHECKED_MD}}</p>
+    </div>
+    <div>{{DEADLINES}}</div>
+  </div>
+</section>
+
+<section id="apply">
+  <div class="wrap split">
+    <div>
+      <h2>Get listed</h2>
+      <p>It's free. We'll look up your license, read your public reviews, and email you within a week with your draft listing to correct before it goes live.</p>
+      <p class="small muted">Paid placements and matched-request fees are optional, always labeled, and never change what a listing shows. Founding pricing goes to early listings. Ask us for current rates.</p>
+      <h3 class="mt">Know a craftsman who deserves the spotlight?</h3>
+      <p class="small"><a href="/mbraceables/#craftsman">Nominate them for Craftsman of the Month →</a></p>
+    </div>
+    <div class="card">
+      <form data-lead="installer_apply" data-ok="Thanks. We'll email your draft listing within a week.">
+        <div class="field"><label for="i-co">Company name</label><input id="i-co" name="company" type="text" required autocomplete="organization"></div>
+        <div class="row">
+          <div class="field"><label for="i-name">Your name</label><input id="i-name" name="first_name" type="text" required autocomplete="name"></div>
+          <div class="field"><label for="i-email">Email</label><input id="i-email" name="email" type="email" required autocomplete="email"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="i-phone">Phone</label><input id="i-phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="i-web">Website</label><input id="i-web" name="website_url" type="url" placeholder="https://"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="i-where">Main license in</label><select id="i-where" name="where"><option value="MD">Maryland</option><option value="DC">DC</option><option value="VA">Virginia</option></select></div>
+          <div class="field"><label for="i-lic">License number</label><input id="i-lic" name="license" type="text" required></div>
+        </div>
+        <fieldset style="border:0;padding:0;margin:0 0 1rem"><legend class="small" style="font-weight:600;margin-bottom:.3rem">Services you offer</legend>
+          <label class="consent"><input type="checkbox" name="svc_audit"> Energy audits and air sealing</label>
+          <label class="consent"><input type="checkbox" name="svc_manualj"> Manual J load calculations</label>
+          <label class="consent"><input type="checkbox" name="svc_ducted"> Ducted heat pumps</label>
+          <label class="consent"><input type="checkbox" name="svc_ductless"> Ductless mini-splits</label>
+          <label class="consent"><input type="checkbox" name="svc_coldclimate"> Cold-climate heat pumps</label>
+          <label class="consent"><input type="checkbox" name="svc_geo"> Geothermal</label>
+          <label class="consent"><input type="checkbox" name="svc_hpwh"> Heat pump water heaters</label>
+          <label class="consent"><input type="checkbox" name="svc_commercial"> Commercial / multifamily</label>
+          <label class="consent"><input type="checkbox" name="training_waitlist"> Put my team on the 2027 training waitlist</label>
+        </fieldset>
+        <label class="consent"><input type="checkbox" name="consent_contact" required> Email me about my listing. We don't add you to any other list.</label>
+        <div class="hp" aria-hidden="true"><label>Leave empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        <button class="btn" type="submit">Apply for a free listing</button>
+        <p class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
